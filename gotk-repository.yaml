@@ -11,25 +11,14 @@ spec:
   url: https://github.com/cristinaraducanu/workshop-flux-bootstrap
 
 ---
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: myteam
-  namespace: default
+  namespace: flux-system
 spec:
   interval: 1m0s
   ref:
     branch: main
   url: https://github.com/cristinaraducanu/workshop-flux-myteam
-
-# ---
-# apiVersion: source.toolkit.fluxcd.io/v1
-# kind: GitRepository
-# metadata:
-#   name: flux-stefan
-#   namespace: flux-system
-# spec:
-#   interval: 1m0s
-#   ref:
-#     branch: master
-#   url: https://github.com/stefanprodan/podinfo
