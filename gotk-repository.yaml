@@ -11,7 +11,7 @@ spec:
   url: https://github.com/cristinaraducanu/workshop-flux-bootstrap
 
 
-  ---
+---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
