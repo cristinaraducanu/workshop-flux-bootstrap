@@ -10,6 +10,16 @@ spec:
     branch: main
   url: https://github.com/cristinaraducanu/workshop-flux-bootstrap
 
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: myteam
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  url: https://github.com/cristinaraducanu/workshop-flux-myteam
 
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
